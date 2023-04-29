@@ -40,7 +40,7 @@ The script requires `unbuffer` command to preserve ANSI colors when outputting t
 The webserver accepts the same parameters as the library but chained in the request url for example:
 
 ```
-curl localhost:8001/all
-curl localhost:8001/all/find-pwm0/
-curl localhost:8001/pins/i2c
+curl localhost:8002/all
+curl localhost:8002/all/find-pwm0/
+curl localhost:8002/pins/i2c
 ```

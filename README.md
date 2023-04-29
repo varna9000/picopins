@@ -25,8 +25,6 @@ eg:    picopins i2c  - show GPIO and I2C labels
 
 * Just run `python3 -m pip install picopins`
 
-
-
 # Web server
 
 Using the built-in python web server, you can run your own zero configuration pinout server with
@@ -38,7 +36,7 @@ Using the built-in python web server, you can run your own zero configuration pi
 The webserver accepts the same parameters as the library but chained in the request url for example:
 
 ```
-curl localhhost:8001/all
-curl localhhost:8001/all/find-pwm0/
-curl localhhost:8001/pins/i2c
+curl localhost:8001/all
+curl localhost:8001/all/find-pwm0/
+curl localhost:8001/pins/i2c
 ```

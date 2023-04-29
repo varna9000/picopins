@@ -23,7 +23,7 @@ class CustomHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
             if parameter in self.bus:
                 buses.append(parameter)
 
-        cmd = f'unbuffer python picopins/__main__.py {" ".join(buses)} {" ".join(arguments)} > index.txt'
+        cmd = f'unbuffer {os.path.dirname(os.path.realpath(__file__))}/env/bin/python picopins/__main__.py {" ".join(buses)} {" ".join(arguments)} > index.txt'
         print(cmd)
         os.system(cmd)
 

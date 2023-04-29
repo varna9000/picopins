@@ -31,7 +31,11 @@ Using the built-in python web server, you can run your own zero configuration pi
 
 `python3 server.py`
 
-*Dependancy*: please install `expect` package for your OS e.g. for  Debian based systems `sudo apt install expect` The script requires `unbuffer` command to preserve ANSI colors when outputting the text.
+*Dependancy*: please install `expect` package for your OS e.g. for  Debian based systems:
+
+`sudo apt install expect`
+
+The script requires `unbuffer` command to preserve ANSI colors when outputting the text.
 
 The webserver accepts the same parameters as the library but chained in the request url for example:
 

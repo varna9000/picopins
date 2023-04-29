@@ -28,5 +28,13 @@ eg:    picopins i2c  - show GPIO and I2C labels
 
 # Web server
 
-Using the built-in python web server, you can run your own zero configuration pinout server with "server.py"
+Using the built-in python web server, you can run your own zero configuration pinout server with `python3 server.py`
 *Dependancy*: please install expect package for your OS. The webserver requires "unbuffer" command to preserve ANSI colors when outputting the text.
+
+The webserver accepts the same parameters as the library but chained in the request url for example:
+
+```
+curl localhhost:8001/all
+curl localhhost:8001/all/find-pwm0/
+curl localhhost:8001/pins/i2c
+```
